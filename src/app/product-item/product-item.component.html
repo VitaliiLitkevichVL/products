@@ -1,0 +1,21 @@
+<div class="product">
+	<div class="product__visual">
+		<a routerLink="products-detail/{{ product.id }}" class="product__link">
+			<img class="product__img" src="{{ product.img }}" alt="">
+		</a>
+		<span *ngIf="product.discountCost" class="product__sale">sale</span>
+		<span *ngIf="product.new" class="product__new">new</span>
+	</div>
+	<strong class="product__title">{{ product.title }}</strong>
+	<p class="product__description">
+		{{ product.description }}
+	</p>
+	<div class="product__row product__row--cost">
+		<span class="product__cost">${{ product.cost }}</span>
+		<span *ngIf="product.discountCost" class="product__discountCost">${{ product.discountCost }}</span>
+	</div>
+	<div class="product__row">
+		<a href="#" class="btn product__btn product__btn--add">Add to cart</a>
+		<a routerLink="products-detail/{{ product.id }}" class="btn product__btn product__btn--view">view</a>
+	</div>
+</div>

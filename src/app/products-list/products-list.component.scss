@@ -1,0 +1,27 @@
+@import '../../scss/vars';
+
+.product-list {
+	margin: 0 0 10px;
+	padding: 30px 0;
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	&__holder {
+		margin: 0 -1.282051282% 0;
+		padding: 0;
+		padding: 19px 0 0;
+		&:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+	}
+	&__product {
+		float: left;
+		width: 22.4%;
+		margin: 0 1.282051282% 4%;
+	}
+}
+

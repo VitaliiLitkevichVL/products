@@ -1,0 +1,11 @@
+<div class="product-detail">
+	<div class="visual">
+		<img src="{{ product.img }}" alt="">
+	</div>
+</div>
+<dl>
+	<dt>Title:</dt><dd>{{ product.title }}</dd>
+	<dt>Cost:</dt><dd>{{ product.cost }}</dd>
+	<dt>Description:</dt><dd>{{ product.description }}</dd>
+	<dt *ngIf="product.discountCost">Sale:</dt><dd>{{ product.discountCost }}</dd>
+</dl>

@@ -1,0 +1,104 @@
+@import '../../scss/vars';
+.product {
+	border: 1px solid #ccc;
+	padding: 0 10px 10px;
+	&:hover {
+		transition: all 0.5s ease;
+		box-shadow: 0 2px 7px rgba(0, 0, 0, 0.35);
+	}
+	&__visual {
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		border: 1px solid #ccc;
+		margin: -19px 0 15px;
+		background-color: #fff;
+		height: 250px;
+		line-height: 250px;
+	}
+	&__link {
+		display: block;
+		height: 100%;
+	}
+	&__img {
+		width: auto;
+		height: auto;
+		max-width: 95%;
+		max-height: 95%;
+		vertical-align: middle;
+	}
+	&__sale, &__new {
+		position: absolute;
+		height: 38px;
+		font: 500 13px/38px Ubuntu, sans-serif;
+		top: 50%;
+		margin: -19px 0 0 0;
+		width: 70px;
+		text-align: center;
+		color: #e5e5e5;
+		text-transform: uppercase;
+	}
+	&__sale {
+		background-color: $acsent-color;
+		left: 0;
+	}
+	&__new {
+		right: 0;
+		background-color: #000;
+	}
+	&__title {
+		font: 14px/15px 'Ubuntu', sans-serif;
+		color: $color-heading;
+		height: 30px;
+		margin: 0 0 10px;
+		overflow: hidden;
+	}
+	&__description {
+		overflow: hidden;
+		height: 45px;
+		margin: 0 0 0 0;
+	}
+	&__row {
+		&:after {
+			content: "";
+			clear: both;
+			display: block;
+		}
+		&--cost {
+			padding: 10px 0 20px;
+			height: 60px;
+		}
+	}
+	&__cost, &__discountCost {
+		display: inline-block;
+		line-height: 26px;
+		font-weight: 400;
+	}
+	&__cost {
+		color: $color-heading;
+		padding: 0 26px 0 0;
+		font-size: 26px;
+	}
+	&__discountCost {
+		color: $acsent-color;
+		font-size: 17px;
+		text-decoration: line-through ;
+	}
+	&__btn {
+		width: 48%;
+		&--add {
+			font-weight: 500;
+			float: left;
+		}
+		&--view {
+			font-weight: 300;
+			background: #d9d9d9;
+			color: #999e9f;
+			float: right;
+			&:hover {
+				background: #baaeae;
+				color: #fff;
+			}
+		}
+	}
+}
