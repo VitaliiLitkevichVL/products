@@ -3,9 +3,8 @@
 	padding: 20px 0;
 	background-color: coral;
 	overflow: hidden;
-	h2 {
-		margin: 0;
-		float: left;
+	.title-holder {
+		overflow: hidden;
 	}
 	.backet {
 		float: right;
