@@ -55,7 +55,7 @@
 	}
 	&__description {
 		overflow: hidden;
-		height: 45px;
+		height: #{$defauld-lineHeight*3}px;
 		margin: 0 0 0 0;
 	}
 	&__row {

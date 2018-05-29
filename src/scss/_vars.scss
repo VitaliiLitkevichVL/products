@@ -1,6 +1,7 @@
 $main-color: #000;
 $acsent-color: #ed1111;
-$defaul-font: 400 14px/16px 'PT Sans', sans-serif;
+$defauld-lineHeight: 16;
+$defaul-font: 400 14px/#{$defauld-lineHeight}px 'PT Sans', sans-serif;
 $color-heading: #333333;
 $border: 1px solid #e5e5e5;
 $fa-font-path : '../../node_modules/font-awesome/fonts';
