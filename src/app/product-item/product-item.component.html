@@ -15,7 +15,7 @@
 		<span *ngIf="product.discountCost" class="product__discountCost">${{ product.discountCost }}</span>
 	</div>
 	<div class="product__row">
-		<a href="#" class="btn product__btn product__btn--add">Add to cart</a>
+		<a (click)="addToCart(product.id)" class="btn product__btn product__btn--add">Add to cart</a>
 		<a routerLink="products-detail/{{ product.id }}" class="btn product__btn product__btn--view">view</a>
 	</div>
 </div>

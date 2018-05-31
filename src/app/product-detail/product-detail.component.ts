@@ -22,7 +22,7 @@ export class ProductDetailComponent implements OnInit {
 	ngOnInit() {
 		this.index = +this.activateRoute.snapshot.paramMap.get('id');
 		this.product = this.productServese.getData().find(x => x.id === this.index);
-		this.titleService.title = this.product.title;
+		this.titleService.title.next(this.product.title);
 	}
 
 }

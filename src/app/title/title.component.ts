@@ -7,12 +7,16 @@ import { TitleService } from '../title.service'
 	styleUrls: ['./title.component.scss']
 })
 export class TitleComponent implements OnInit {
+	public tit: any;
 
 	constructor(
 		private titleService: TitleService
-		) { }
+		) {}
 
 	ngOnInit() {
+		this.titleService.title$.subscribe(tit => {
+			this.tit = tit;
+		});
 	}
 
 }
