@@ -1,15 +1,20 @@
-<div class="top-panel">
-	<div class="wrapper">
-		<div class="backet">
-			<app-cart></app-cart>	
-		</div>
-		<div class="title-holder">
-			<app-title></app-title>
+<div class="app-wrap">
+	<div class="top-panel">
+		<div class="wrapper">
+			<div class="backet">
+				<app-cart></app-cart>	
+			</div>
+			<div class="title-holder">
+				<app-title></app-title>
+			</div>
 		</div>
 	</div>
-</div>
-<div class="wrapper">
-	<router-outlet></router-outlet>
+	<div class="wrapper">
+		<router-outlet></router-outlet>
+	</div>
+	<div class="modal" *ngIf="modalService.modalVisible">
+		<app-modal class="modal-c"></app-modal>		
+	</div>
 </div>
 
 

@@ -10,6 +10,7 @@ import { ProductsService } from './products.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found-component.component';
 import { TitleComponent } from './title/title.component';
 import { CartComponent } from './cart/cart.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CartComponent } from './cart/cart.component';
     ProductDetailComponent,
     PageNotFoundComponent,
     TitleComponent,
-    CartComponent
+    CartComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
